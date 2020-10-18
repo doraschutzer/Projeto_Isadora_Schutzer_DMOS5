@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Projeto_Isadora_Schutzer_DMOS5</string>
+    <string name="erro_consultar_horoscopo">Erro ao consultar horóscopo</string>
+    <string name="erro">Erro</string>
+    <string name="solicitar_permissao">Permitir que o aplicativo consulte a Internet?</string>
+
+    <string-array name="signs_array">
+        <item>Aries</item>
+        <item>Taurus</item>
+        <item>Gemini</item>
+        <item>Cancer</item>
+        <item>Leo</item>
+        <item>Virgo</item>
+        <item>Libra</item>
+        <item>Scorpio</item>
+        <item>Sagittarius</item>
+        <item>Capricorn</item>
+        <item>Aquarius</item>
+        <item>Pisces</item>
+    </string-array>
+
+</resources>

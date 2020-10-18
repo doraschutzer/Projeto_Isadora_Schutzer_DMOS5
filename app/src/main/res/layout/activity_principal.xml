@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".ui.PrincipalActivity">
+
+
+    <TextView
+        android:id="@+id/text_horoscopo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Horóscopo"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_info"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/text_horoscopo">
+
+        <TextView
+            android:id="@+id/text_descricao_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descrição:"
+            android:textColor="@color/colorSkyBlue"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_descricao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="AAAAAAAAAAAA"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/text_descricao_label"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_compatibilidade_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Compatibilidade:"
+            android:textColor="@color/colorSkyBlue"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_descricao" />
+
+        <TextView
+            android:id="@+id/text_compatibilidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="AAAAAAAAAAAA"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/text_compatibilidade_label"
+            app:layout_constraintTop_toBottomOf="@+id/text_descricao" />
+
+        <TextView
+            android:id="@+id/text_humor_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Humor:"
+            android:textColor="@color/colorSkyBlue"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_compatibilidade" />
+
+        <TextView
+            android:id="@+id/text_humor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="AAAAAAAAAAAA"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/text_humor_label"
+            app:layout_constraintTop_toBottomOf="@+id/text_compatibilidade" />
+
+
+        <TextView
+            android:id="@+id/text_cor_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Cor:"
+            android:textColor="@color/colorSkyBlue"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_humor" />
+
+        <TextView
+            android:id="@+id/text_cor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="AAAAAAAAAAAA"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/text_cor_label"
+            app:layout_constraintTop_toBottomOf="@+id/text_humor" />
+
+        <TextView
+            android:id="@+id/text_numero_da_sorte_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Número da sorte:"
+            android:textColor="@color/colorSkyBlue"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_cor" />
+
+        <TextView
+            android:id="@+id/text_numero_da_sorte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="AAAAAAAAAAAA"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/text_numero_da_sorte_label"
+            app:layout_constraintTop_toBottomOf="@+id/text_cor" />
+
+
+        <TextView
+            android:id="@+id/text_hora_da_sorte_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Hora da sorte:"
+            android:textColor="@color/colorSkyBlue"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_numero_da_sorte" />
+
+        <TextView
+            android:id="@+id/text_hora_da_sorte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="AAAAAAAAAAAA"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/text_hora_da_sorte_label"
+            app:layout_constraintTop_toBottomOf="@+id/text_numero_da_sorte" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/btn_visualizar_horoscopo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rb_ontem"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_btn_ontem_selector"
+            android:button="@android:color/transparent"
+            android:checked="true"
+            android:gravity="center"
+            android:onClick="onDayRadioBtnClick"
+            android:text="Ontem"
+            android:textColor="@color/colorAccent" />
+
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rb_hoje"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_btn_hoje_selector"
+            android:button="@android:color/transparent"
+            android:checked="true"
+            android:gravity="center"
+            android:onClick="onDayRadioBtnClick"
+            android:text="Hoje"
+            android:textColor="@android:color/white" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rb_amanha"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_btn_amanha_selector"
+            android:button="@android:color/transparent"
+            android:checked="false"
+            android:gravity="center"
+            android:onClick="onDayRadioBtnClick"
+            android:text="Amanhã"
+            android:textColor="@color/colorAccent" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_visualizar_horoscopo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btn_visualizar_horoscopo"
+        android:text="Visualizar Horóscopo"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
